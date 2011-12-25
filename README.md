@@ -2,7 +2,7 @@ This is a plugin for Impact. It works in the browser and in iOS. For the browser
 
 The iOS Version uses GameKit from Apple. This establishes a connection via Bluetooth and only allows __two__ peers. The whole connection part is build around this. So the node version supports two peers, too. But you could extend the connection/start game part so it would work with more peers. But I can't tell you how good that works.
 
-With the Plugin comes an example game thats build upon the jump & run example von Dominic. Unfortunally this isn't the best example for this network plugin. But it shows its limitations. It's quite hard to do a action game that depends on realtime and exact position transfer. Right now the plugin only overwrites the new value that comes in from the network. That could be better. It could somehow tween between the old and the new value. But thats something I can't do right now and it wasn't important for our game [Steamclash](http://steamclash.com/) which works perfectly fine despite this.
+With the Plugin comes an example game thats build upon the jump & run example from Dominic. Unfortunately this isn't the best example for this network plugin. But it shows its limitations. It's quite hard to do a action game that depends on realtime and exact position transfer. Right now the plugin only overwrites the new value that comes in from the network. That could be better. It could somehow tween between the old and the new value. But thats something I can't do right now and it wasn't important for our game [Steamclash](http://steamclash.com/) which works perfectly fine despite this.
 
 I wrote some comments into the example game. So start with this, learn how it works and have fun.
 
@@ -15,11 +15,11 @@ You need the media assets from the jump & run example from Impact. You can get t
 ## Node Version
 
 1. Install node and socket.io. Get information from their sites, it's not that hard.
-2. Put the following lin into the head of your index.html
-
+2. Put the following line into the head of your index.html
+```html
     <script> var ios = false; </script>
     <script src="/socket.io/socket.io.js"></script>
-
+```
 3. Put the plugin in your impact plugin directory
 4. Include it in your main.js file
 5. You need 3 functions in your ig.game:
@@ -103,9 +103,9 @@ Add those lines
       }
     }
 
-Those functions will probably excist already but only contain comments. Delete them if they do nothing, if not, copy the network code into them.
+Those functions will probably exist already but only contain comments. Delete them if they do nothing, if not, copy the network code into them.
 
-6. Add the ios impact plugin to your impact plugin folder and the main.js file.
+6. Add the iOS impact plugin to your impact plugin folder and the main.js file.
 
 # Using 
 
