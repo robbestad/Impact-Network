@@ -15,11 +15,7 @@ You need the media assets from the jump & run example from Impact. You can get t
 ## Node Version
 
 1. Install node and socket.io. Get information from their sites, it's not that hard.
-2. Put the following line into the head of your index.html
-```html
-    <script> var ios = false; </script>
-    <script src="/socket.io/socket.io.js"></script>
-```
+2. Put the following line into the head of your index.html `<script> var ios = false; </script><script src="/socket.io/socket.io.js"></script>`
 3. Put the plugin in your impact plugin directory
 4. Include it in your main.js file
 5. You need 3 functions in your ig.game:
